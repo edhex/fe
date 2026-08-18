@@ -47,3 +47,8 @@ The site uses FormSubmit. If you later want first-party form handling, replace t
 ## Domain
 
 Canonical production URL: `https://myfutureedge.com/`
+
+
+## FormSubmit
+
+The FutureEdge priority form is activated with FormSubmit. The HTML fallback endpoint uses the confirmed FormSubmit token rather than the destination email address. The JavaScript AJAX submission continues to use FormSubmit's documented AJAX email endpoint so the in-page success experience remains unchanged.

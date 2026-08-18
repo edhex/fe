@@ -1,0 +1,17 @@
+{
+  "name": "FutureEdge",
+  "short_name": "FutureEdge",
+  "description": "FutureEdge VCE Success Series",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fffaf5",
+  "theme_color": "#fb0168",
+  "icons": [
+    {
+      "src": "/assets/futureedge-mark.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

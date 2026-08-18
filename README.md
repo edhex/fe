@@ -70,3 +70,7 @@ This package now includes:
 - `SEO-AI-LAUNCH-CHECKLIST.md` with the remaining Search Console/Bing steps
 
 Deploy by replacing the existing GitHub repository contents with this package and pushing to the production branch. Vercel should redeploy automatically.
+
+
+## Important: replace the full repo
+This release uses versioned CSS/JS filenames (`styles-20260818b.css` and `app-20260818b.js`) to defeat stale browser/CDN caching. Upload the **entire contents** of this folder, including `/assets`, rather than replacing only `index.html`.

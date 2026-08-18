@@ -52,3 +52,21 @@ Canonical production URL: `https://myfutureedge.com/`
 ## FormSubmit
 
 The FutureEdge priority form is activated with FormSubmit. The HTML fallback endpoint uses the confirmed FormSubmit token rather than the destination email address. The JavaScript AJAX submission continues to use FormSubmit's documented AJAX email endpoint so the in-page success experience remains unchanged.
+
+
+## Launch update — 18 Aug 2026
+
+This package now includes:
+
+- mobile hamburger navigation with accessible ARIA states and Escape-to-close
+- permanent redirects for the old WordPress checkout/event URLs
+- canonical redirects from `www.myfutureedge.com` and `fe-ten-iota.vercel.app` to `myfutureedge.com`
+- `/privacy` and `/terms` pages
+- updated sitemap and robots.txt
+- search-focused page title/description and Australian language targeting
+- Organization, WebSite, WebPage and Service JSON-LD structured data
+- explicit AI-search crawler access for OAI-SearchBot and PerplexityBot
+- stronger security headers and a Content Security Policy
+- `SEO-AI-LAUNCH-CHECKLIST.md` with the remaining Search Console/Bing steps
+
+Deploy by replacing the existing GitHub repository contents with this package and pushing to the production branch. Vercel should redeploy automatically.

@@ -1,13 +1,57 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/checkout",
+      "destination": "/#interest",
+      "permanent": true
+    },
+    {
+      "source": "/checkout/",
+      "destination": "/#interest",
+      "permanent": true
+    },
+    {
+      "source": "/event/success-event-checkout",
+      "destination": "/#interest",
+      "permanent": true
+    },
+    {
+      "source": "/event/success-event-checkout/",
+      "destination": "/#interest",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.myfutureedge.com"
+        }
+      ],
+      "destination": "https://myfutureedge.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "fe-ten-iota.vercel.app"
+        }
+      ],
+      "destination": "https://myfutureedge.com/$1",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
-          "value": "public, max-age=86400"
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
         }
       ]
     },
@@ -25,6 +69,14 @@
         {
           "key": "Permissions-Policy",
           "value": "camera=(), microphone=(), geolocation=()"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self' https://formsubmit.co; form-action 'self' https://formsubmit.co; base-uri 'self'; object-src 'none'; frame-ancestors 'none'; upgrade-insecure-requests"
         }
       ]
     }

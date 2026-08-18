@@ -2,6 +2,35 @@
   'use strict';
 
 
+  // Mobile navigation
+  const nav=document.querySelector('.nav');
+  const menuToggle=document.getElementById('menuToggle');
+  const mobileMenu=document.getElementById('mobileMenu');
+  let lastMenuFocus=null;
+  function setMenu(open){
+    if(!nav||!menuToggle||!mobileMenu)return;
+    nav.classList.toggle('menu-open',open);
+    document.body.classList.toggle('menu-open',open);
+    menuToggle.setAttribute('aria-expanded',String(open));
+    menuToggle.setAttribute('aria-label',open?'Close menu':'Open menu');
+    mobileMenu.setAttribute('aria-hidden',String(!open));
+    if(open){
+      lastMenuFocus=document.activeElement;
+      const firstLink=mobileMenu.querySelector('a');
+      if(firstLink) setTimeout(function(){firstLink.focus();},80);
+    } else if(lastMenuFocus===menuToggle){
+      menuToggle.focus();
+    }
+  }
+  if(menuToggle&&mobileMenu){
+    menuToggle.addEventListener('click',function(){setMenu(menuToggle.getAttribute('aria-expanded')!=='true');});
+    mobileMenu.querySelectorAll('a').forEach(function(link){link.addEventListener('click',function(){setMenu(false);});});
+    document.addEventListener('keydown',function(e){if(e.key==='Escape'&&menuToggle.getAttribute('aria-expanded')==='true')setMenu(false);});
+    window.addEventListener('resize',function(){if(window.innerWidth>720&&menuToggle.getAttribute('aria-expanded')==='true')setMenu(false);});
+  }
+
+
+
   const valueData={
     access:{kicker:'Rare access',title:'Borrow the experience before you need it.',copy:'A student may never otherwise get to sit down with people who have just achieved exceptional VCE results and ask them the questions that usually stay unanswered. FutureEdge makes that access simple — and brings more than one perspective into the room.'},
     unfiltered:{kicker:'Unfiltered insight',title:'The useful part is often what went wrong.',copy:'The strongest lessons are rarely “I worked hard”. They are the missed marks, over-studying, bad routines, comparison, pressure and moments someone had to change course. FutureEdge is designed to surface the messy detail students can actually learn from.'},

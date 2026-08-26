@@ -92,3 +92,7 @@ The repository also contains a private/unlisted contributor page at `/speakertab
 - Contributor may optionally suggest other students, parents, teachers, coaches or experts FutureEdge should consider.
 - Photo consent allows light presentation edits/enhancement without materially changing appearance.
 - Any paid engagement is agreed separately in writing before that activity.
+
+
+### Speaker photo upload
+The speaker form uses a native multipart POST to FormSubmit. iPhone HEIC/HEIF photos are converted client-side to JPEG (max 2400px) before submission, and the file field uses FormSubmit's documented `attachment` name.

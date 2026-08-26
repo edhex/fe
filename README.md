@@ -74,3 +74,21 @@ Deploy by replacing the existing GitHub repository contents with this package an
 
 ## Important: replace the full repo
 This release uses versioned CSS/JS filenames (`styles-20260818b.css` and `app-20260818b.js`) to defeat stale browser/CDN caching. Upload the **entire contents** of this folder, including `/assets`, rather than replacing only `index.html`.
+
+## Private contributor page
+
+The repository also contains a private/unlisted contributor page at `/speakertab` and confirmation page at `/speakertab-thanks`.
+
+- It is intentionally **not linked from the public website**.
+- It is intentionally **not included in sitemap.xml**.
+- It carries both HTML `noindex` directives and an `X-Robots-Tag: noindex` response header via `vercel.json`.
+- The form submits to the existing activated FutureEdge FormSubmit endpoint and supports an optional image upload. FormSubmit currently documents a 10 MB combined file-upload limit; the page enforces a 9 MB single-photo limit for headroom.
+- Contributor permission and paid engagement terms are deliberately separate. Any paid interview/event arrangement should be confirmed separately in writing.
+
+### Contributor form v1.1 notes
+- Contributor form is for adults (18+) only and uses self-consent.
+- Mobile number and ATAR are required.
+- Interview-topic section was removed; interview scope will be handled separately.
+- Contributor may optionally suggest other students, parents, teachers, coaches or experts FutureEdge should consider.
+- Photo consent allows light presentation edits/enhancement without materially changing appearance.
+- Any paid engagement is agreed separately in writing before that activity.

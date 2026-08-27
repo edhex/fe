@@ -309,7 +309,7 @@ h1{letter-spacing:.024em}
 }
 
 
-/* V8 — FutureEdge brand system */
+/* V8 - FutureEdge brand system */
 body{background:linear-gradient(180deg,var(--paper) 0%,#fff 34%,var(--paper) 100%)}
 .nav{background:rgba(255,250,245,.94)}
 .hero{background:
@@ -754,7 +754,7 @@ body{padding-top:72px}
   letter-spacing:.12em!important;
 }
 
-/* A simple, recognisable physical book — no ruled/page-line effects */
+/* A simple, recognisable physical book - no ruled/page-line effects */
 .book-stage{
   min-height:470px!important;
   perspective:1100px!important;
@@ -1450,7 +1450,7 @@ section{scroll-margin-top:86px!important}
 .voice-card.is-active .voice-label,.voice-card:hover .voice-label{background:var(--brand)!important;color:var(--ink)!important;border-color:var(--ink)!important}
 
 
-/* 2026-08-18F — mobile nav: isolate from FAQ <details> styles + Safari-safe panel */
+/* 2026-08-18F - mobile nav: isolate from FAQ <details> styles + Safari-safe panel */
 .mobile-nav{
   display:none;
   border:0!important;
@@ -1543,7 +1543,7 @@ section{scroll-margin-top:86px!important}
 @media(min-width:721px){.mobile-nav{display:none!important}}
 
 
-/* 2026-08-19G — final mobile content + motion polish */
+/* 2026-08-19G - final mobile content + motion polish */
 /* Distinctive proof cards on phones instead of a plain stacked list. */
 @media(max-width:720px){
   .proof-strip{padding:24px 0!important}

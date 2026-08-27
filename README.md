@@ -54,7 +54,7 @@ Canonical production URL: `https://myfutureedge.com/`
 The FutureEdge priority form is activated with FormSubmit. The HTML fallback endpoint uses the confirmed FormSubmit token rather than the destination email address. The JavaScript AJAX submission continues to use FormSubmit's documented AJAX email endpoint so the in-page success experience remains unchanged.
 
 
-## Launch update — 18 Aug 2026
+## Launch update - 18 Aug 2026
 
 This package now includes:
 
@@ -96,3 +96,11 @@ The repository also contains a private/unlisted contributor page at `/speakertab
 
 ### Speaker photo upload
 The speaker form uses a native multipart POST to FormSubmit. iPhone HEIC/HEIF photos are converted client-side to JPEG (max 2400px) before submission, and the file field uses FormSubmit's documented `attachment` name.
+
+
+## Contributor-page copy polish - 27 Aug 2026
+- Reframed `/speakertab` as an expression of interest rather than assuming a contributor has been selected.
+- Split graduating school from current university/organisation and simplified the Year 12 graduation-year field.
+- Reworked the agreement so permissions apply if FutureEdge and the contributor agree to work together.
+- Replaced legalistic "reasonably practicable" wording with plain English.
+- Removed em dashes across public website copy and interaction text, and tightened wording that felt overly generated or corporate.

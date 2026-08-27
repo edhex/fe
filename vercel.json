@@ -51,7 +51,7 @@
       "headers": [
         {
           "key": "X-Robots-Tag",
-          "value": "noindex, nofollow, noarchive, nosnippet, noimageindex"
+          "value": "noindex, follow, noarchive, nosnippet, noimageindex"
         },
         {
           "key": "Cache-Control",

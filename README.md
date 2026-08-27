@@ -75,9 +75,9 @@ Deploy by replacing the existing GitHub repository contents with this package an
 ## Important: replace the full repo
 This release uses versioned CSS/JS filenames (`styles-20260818b.css` and `app-20260818b.js`) to defeat stale browser/CDN caching. Upload the **entire contents** of this folder, including `/assets`, rather than replacing only `index.html`.
 
-## Private contributor page
+## Speaker + contributor page
 
-The repository also contains a private/unlisted contributor page at `/speakertab` and confirmation page at `/speakertab-thanks`.
+The repository also contains a speaker/contributor interest page at `/speakertab` and confirmation page at `/speakertab-thanks`. The main-site desktop and mobile navigation now link to the page under **Be involved** so the link can be shared naturally. The page remains `noindex` so it is not intended to appear in search results.
 
 - It is intentionally **not linked from the public website**.
 - It is intentionally **not included in sitemap.xml**.

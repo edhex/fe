@@ -104,3 +104,5 @@ The speaker form uses a native multipart POST to FormSubmit. iPhone HEIC/HEIF ph
 - Reworked the agreement so permissions apply if FutureEdge and the contributor agree to work together.
 - Replaced legalistic "reasonably practicable" wording with plain English.
 - Removed em dashes across public website copy and interaction text, and tightened wording that felt overly generated or corporate.
+
+V13: Added a pulsing wider-line-up CTA beneath the four featured students and replaced the old reveal wall with profile-sized future-contributor cards.
